@@ -48,14 +48,6 @@ export const MyForm: React.FC<Props> = ({ onSubmit }) => {
                 Submit
               </Button>
             </div>
-            <Grid container spacing={1} alignItems="flex-end">
-          <Grid item>
-            <AccountCircle />
-          </Grid>
-          <Grid item>
-            <Field id="input-with-icon-grid" label="With a grid" />
-          </Grid>
-        </Grid>
           </div>
           <pre>{JSON.stringify(values, null, 2)}</pre>
         </Form>

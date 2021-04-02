@@ -1,0 +1,30 @@
+{
+    "yog":{
+        "title":"yog",
+        "theme":"simple",
+        "links":[
+            {
+                "title":"Github",
+                "url":"https://github.com/YogPanjarale"
+            },
+            {
+                "title":"Linkedin",
+                "url":"https://www.linkedin.com/in/yog-panjarale/"
+            }
+        ]
+    },
+    "benawad":{
+        "title":"Ben Awad",
+        "theme":"simple",
+        "links":[
+            {
+                "title":"Github",
+                "url":"https://github.com/benawad"
+            },
+            {
+                "title":"Linkedin",
+                "url":"https://www.linkedin.com/in/benawad/"
+            }
+        ]
+    }
+}
