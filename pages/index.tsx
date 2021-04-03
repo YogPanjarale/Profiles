@@ -2,7 +2,7 @@ import Head from "next/head";
 import { MyForm } from '../components/form'
 export default function Page() {
     return (
-        <div>
+        <div className="pt-12">
             <Head>
                 <title>Login Form</title>
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />

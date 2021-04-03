@@ -12,7 +12,7 @@ export default function Id({ data }: { data: IProfile }) {
   const { title, links,image="https://img.icons8.com/pastel-glyph/2x/person-male--v3.png" } = data;
 
   return (
-    <div className="bg-yellow-100 py-10 flex-col h-screen align-items flex" >
+    <div className="bg-gradient-to-r from-green-400 to-blue-500 py-10 flex-col h-screen align-items flex" >
       <Head>
         <title>{title} | Links</title>
         <link rel="icon" href={image} />
