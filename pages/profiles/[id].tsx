@@ -36,7 +36,13 @@ export async function getServerSideProps({ params }) {
   const req = await fetch(`http://localhost:3000/profiles.json`);
   // console.log(params,req)
   let result = await req.json();
-  result = result[params.id.toString()];
+  if (params.id.toString() in result){
+
+    result = result[params.id.toString()];
+  }
+  else{
+    result = result["none"]
+  }
   return {
     props: { data: result },
   };

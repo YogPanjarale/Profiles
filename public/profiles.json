@@ -1,4 +1,9 @@
 {
+    "none":{
+        "title":"Account Not Found",
+        "theme":"simple",
+        "links":[]
+    },
     "yog":{
         "title":"Yog Panjarale",
         "theme":"simple",
