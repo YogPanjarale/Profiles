@@ -4,11 +4,12 @@ import "tailwindcss/tailwind.css";
 import { IProfile } from "@type/types";
 // import {MyLink} from '@components/link'
 import { MyLink } from "../../components/link";
+import { Rights } from "../../components/rights";
 export default function Id({ data }: { data: IProfile }) {
   const router = useRouter();
   // console.log(data);
   const { id } = router.query;
-  const { title, links,image="https://avatars.githubusercontent.com/u/64301340" } = data;
+  const { title, links,image="https://img.icons8.com/pastel-glyph/2x/person-male--v3.png" } = data;
 
   return (
     <div className="bg-yellow-100 py-10 flex-col h-screen align-items flex" >
@@ -18,7 +19,7 @@ export default function Id({ data }: { data: IProfile }) {
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"></link>
       </Head>
       <div className="text-center py-2 space-y-2">
-      <img src={image} className="w-28 h-28 rounded-full mx-auto my-auto border-white border-2"/>
+      <img src={image} className="w-28 h-28 self-center rounded-full mx-auto my-auto border-white border-2"/>
         <h1 className="font-medium  text-xl ">@{title}</h1>
       </div>
       <div className="space-y-5 m-10 align-middle ">
@@ -26,7 +27,7 @@ export default function Id({ data }: { data: IProfile }) {
         <MyLink key={j} {...d} />
       ))}
       </div>
-      {/* <div className="h-screen"></div> */}
+      <Rights/>
     </div>
   );
 }

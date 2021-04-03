@@ -31,5 +31,28 @@
                 "url":"https://www.linkedin.com/in/benawad/"
             }
         ]
+    },
+    "tomscott":{
+        "title":"Tom Scott",
+        "theme":"simple",
+        "image":"https://yt3.ggpht.com/ytc/AAUvwnigiEcc2DfWlSdLoEDko1azVNC24NNI4yUef4F8fA",
+        "links":[
+            {
+                "title":"Youtube",
+                "url":"https://youtube.com/TomScottGo"
+            },
+            {
+                "title":"Instagram",
+                "url":"https://instagram.com/tomscottgo"
+            },
+            {
+                "title":"Twitter",
+                "url":"https://twitter.com/tomscott"
+            },
+            {
+                "title":"Facebook",
+                "url":"https://facebook.com/tomscott"
+            }
+        ]
     }
 }
