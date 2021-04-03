@@ -11,5 +11,6 @@ export interface ILink{
 export interface IProfile{
     title:string;
     theme?:themes;
+    image?:string;
     links:Array<ILink>
 }
