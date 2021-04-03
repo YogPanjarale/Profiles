@@ -2,14 +2,25 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import "tailwindcss/tailwind.css";
 import { IProfile } from "@type/types";
-export default function Car({ data }: { data: IProfile }) {
+// import {MyLink} from '@components/link'
+import { MyLink } from "../../components/link";
+export default function Id({ data }: { data: IProfile }) {
   const router = useRouter();
-  console.log(data);
+  // console.log(data);
   const { id } = router.query;
-  
+  const { title, links } = data;
+
   return (
-    <div className="bg-red-100">
-        <pre>{JSON.stringify(data)}</pre>
+    <div className="bg-yellow-100 flex-col h-screen align-items flex" >
+      <div className="text-center pt-10">
+        <h1 className="font-medium text-xl ">{title}</h1>
+      </div>
+      <div className="space-y-5 m-10 align-middle ">
+      {links.map((d, j) => (
+        <MyLink key={j} {...d} />
+      ))}
+      </div>
+      {/* <div className="h-screen"></div> */}
     </div>
   );
 }

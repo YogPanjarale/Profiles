@@ -19,7 +19,9 @@
     "jsx": "preserve",
     "paths": {
       "@components/*": [
-        "./components/*"
+        "./components/*",
+        "../components/*",
+        "../../components/*"
       ],
       "@type/*": [
         "./types/*"
