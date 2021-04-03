@@ -21,14 +21,14 @@ export default function Id({ data }: { data: IProfile }) {
         {/* <!-- Primary Meta Tags --> */}
         <title>{title} | Links</title>
         <link rel="icon" href={image} />
-        <meta name="title" content={{ title } + "| Links"} />
+        <meta name="title" content={ title  + "| Links"} />
         <meta
           name="description"
           content="Put all your links in one place and use just one link "/>
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
-        <meta property="og:title" content={{ title } + " | Links"} />
+        <meta property="og:title" content={title  + " | Links"} />
         <meta
           property="og:description"
           content="Put all your links in one place and use just one link "/>
@@ -36,7 +36,7 @@ export default function Id({ data }: { data: IProfile }) {
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:title" content={{ title } + " | Links"} />
+        <meta property="twitter:title" content={ title  + " | Links"} />
         <meta
           property="twitter:description"
           content="Put all your links in one place and use just one link "/>
