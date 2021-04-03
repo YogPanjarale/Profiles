@@ -33,7 +33,8 @@ export default function Id({ data }: { data: IProfile }) {
 }
 
 export async function getServerSideProps({ params }) {
-  const req = await fetch(`/profiles.json`);
+  // const req = await fetch(`/profiles.json`);
+  const req = await fetch(`https://raw.githubusercontent.com/YogPanjarale/Profiles/main/public/profiles.json`);
   // console.log(params,req)
   let result = await req.json();
   if (params.id.toString() in result){
