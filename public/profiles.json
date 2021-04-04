@@ -20,6 +20,21 @@
             {
                 "title":"Instagram",
                 "url":"https://instagram.com/yogpanjarale"
+            },
+            {
+                "title":"Twitter",
+                "url":"https://twitter.com/YogPanjarale"
+            }
+        ]
+    },
+    "kunallandge":{
+        "title":"Kunal Landge",
+        "theme":"simple",
+        "image":"https://instagram.fnag5-1.fna.fbcdn.net/v/t51.2885-19/s320x320/165325948_2899389393613856_4657370248409191478_n.jpg?tp=1&_nc_ht=instagram.fnag5-1.fna.fbcdn.net&_nc_ohc=9T09goQT-TIAX8iMLdV&edm=ABfd0MgAAAAA&ccb=7-4&oh=88397dc2a48dfcbe169738a7809ee6e5&oe=608FDF4C&_nc_sid=7bff83",
+        "links":[
+            {
+                "title":"Instagram",
+                "url":"https://www.instagram.com/mr._kunal/"
             }
         ]
     },
@@ -59,5 +74,5 @@
                 "url":"https://facebook.com/tomscott"
             }
         ]
-    }
+    },
 }
