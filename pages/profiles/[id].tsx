@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import Head from "next/head";
+import Image from 'next/image'
 import "tailwindcss/tailwind.css";
 import { IProfile } from "@type/types";
 // import {MyLink} from '@components/link'
@@ -47,10 +48,16 @@ export default function Id({ data }: { data: IProfile }) {
         ></link>
       </Head>
       <div className="text-center py-2 space-y-2">
-        <img
+        <div className="w-28 h-28 self-center rounded-full mx-auto my-auto border-white border-2">
+        <Image
+          // className="w-28 h-28 self-center rounded-full mx-auto my-auto border-white border-2"
+          className="rounded-full"
           src={image}
-          className="w-28 h-28 self-center rounded-full mx-auto my-auto border-white border-2"
+          width={112}
+          height={112}
+          alt={title}
         />
+        </div>
         <h1 className="font-medium  text-xl ">@{title}</h1>
       </div>
       <div className="space-y-5 m-10 align-middle ">
