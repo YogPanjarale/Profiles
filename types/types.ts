@@ -1,7 +1,7 @@
-enum themes{
-    "simple",
-    "dark"
-}
+// enum themes{
+//     ,
+//     "dark"
+// }
 export interface ILink{
     title:string;
     url:string;
@@ -10,7 +10,7 @@ export interface ILink{
 
 export interface IProfile{
     title:string;
-    theme?:themes;
+    theme?:"simple"|"dark";
     image?:string;
     links:Array<ILink>
 }
