@@ -17,14 +17,16 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "baseUrl": "./",
     "paths": {
       "@components/*": [
-        "./components/*",
-        "../components/*",
-        "../../components/*"
+        "components/*",
       ],
       "@type/*": [
-        "./types/*"
+        "types/*"
+      ],
+      "@services/*":[
+        "services/*"
       ]
     }
   },
