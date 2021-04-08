@@ -5,7 +5,7 @@ import "tailwindcss/tailwind.css";
 import { IProfile } from "@type/types";
 import { MyLink } from "@components/link";
 import { Rights } from "@components/rights";
-import getUser from '../api/[user]'
+import {getUser} from '../api/[user]'
 export default function Id({ data }: { data: IProfile }) {
   const router = useRouter();
   // console.log(data);
@@ -13,7 +13,7 @@ export default function Id({ data }: { data: IProfile }) {
   const {
     title,
     links,
-    image = "https://img.icons8.com/pastel-glyph/2x/person-male--v3.png",
+    image = "/person.png",
   } = data;
 
   return (
@@ -83,9 +83,9 @@ export async function getServerSideProps({ params }:{params:{id:string}}) {
   //   result = result["none"];
   // }
 
-  const req:Response = await fetch(`https://localhost:3000/api/${params.id.toString()}`)
-  let result =req.json()
-  // let result = getUser()
+  // const req:Response = await fetch(`https://localhost:3000/api/${params.id.toString()}`)
+  // let result =req.json()
+  let result =await  getUser(params.id.toString())
   return {
     props: { data: result },
   };
