@@ -5,7 +5,7 @@ import "tailwindcss/tailwind.css";
 import { IProfile } from "@type/types";
 import { MyLink } from "@components/link";
 import { Rights } from "@components/rights";
-import {getUser} from '../api/[user]'
+import {getUser} from '../api/profile/[user]'
 export default function Id({ data }: { data: IProfile }) {
   const router = useRouter();
   // console.log(data);
