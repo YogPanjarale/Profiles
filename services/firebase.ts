@@ -1,5 +1,6 @@
 import fb from 'firebase/app'
 import 'firebase/auth'
+import 'firebase/firestore'
 // import 'firebase/analytics'
 
 const firebaseConfig= {
