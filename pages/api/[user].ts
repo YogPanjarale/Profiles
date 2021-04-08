@@ -13,14 +13,15 @@ export const getUser = async (id: string | string[]) => {
     .collection("profile")
     .where("id", "==", id)
     .get();
-    // console.log(docs.length)
+  // console.log(docs.length)
   if (docs.length > 0) {
     let { title, theme, image } = docs[0].data();
     result.title = title;
     result.image = image;
     result.theme = theme ?? "simple";
-    const links = await docs[0].ref.collection("links").get();
-    links.forEach( (e) => {
+    const links = await docs[0].ref.collection("links").orderBy("index").get();
+
+    links.forEach((e) => {
       const link: ILink = e.data() as ILink;
       result.links.push(link);
     });
