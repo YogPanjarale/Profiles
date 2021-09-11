@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { MyForm } from '../components/form'
 import ID from './profiles/[id]'
+import {getUser} from './api/profile/[user]'
 
 export default function Page({data}) {
     return <ID data={data}></ID>
