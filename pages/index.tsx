@@ -3,7 +3,7 @@ import { MyForm } from '../components/form'
 import ID from './profiles/[id]'
 
 export default function Page({data}) {
-    return <Id data={data}></Id>
+    return <ID data={data}></ID>
     // return (
     //     <div className="pt-12">
     //         <Head>
